@@ -1,5 +1,7 @@
 # Source: https://leetcode.com/problems/non-overlapping-intervals/
 # Type: Greedy
+# Time Complexity: O(nlogn)
+# Space Complexity: O(1)
 
 import sys
 
