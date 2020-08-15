@@ -1,2 +1,3 @@
 # coding_interview_questions
-Solved coding interview question repository
+
+A collection of solved coding interview questions.
