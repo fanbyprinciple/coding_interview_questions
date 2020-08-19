@@ -4,7 +4,7 @@
  */
 
 
-// reference 1 : understanding: https://www.youtube.com/watch?v=0FKn0FSIQYE
+// refer ence 1 : understanding: https://www.youtube.com/watch?v=0FKn0FSIQYE
 // reference 2 : code : https://github.com/chihungyu1116/leetcode-javascript/blob/master/123%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20III.js
 
 // we need to choose a combination of two buys and sell to amximise profit
