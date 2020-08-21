@@ -1,6 +1,6 @@
-// Source: https://leetcode.com/problems/longest-substring-without-repeating-characters/submissions/
-// Type: ??
-// Time Complexity: ??
+// Source: https://leetcode.com/problems/longest-substring-without-repeating-characters
+// Type: String, Sliding Window
+// Time Complexity: O(N^2) (brute force), O(N) (sliding window)
 // Space Complexity: ??
 
 /*
