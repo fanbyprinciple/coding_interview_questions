@@ -4,9 +4,10 @@
 // Space Complexity: ??
 
 /*
-Runtime: 304 ms, faster than 26.08% of JavaScript online submissions for Longest Substring Without Repeating Characters.
-Memory Usage: 43.4 MB, less than 25.10% of JavaScript online submissions for Longest Substring Without Repeating Characters.
+Runtime: 36 ms, faster than 67.64% of Python3 online submissions for Longest Common Prefix.
+Memory Usage: 13.8 MB, less than 87.93% of Python3 online submissions for Longest Common Prefix.
 */
+
 
 var lengthOfLongestSubstring = function(s = "pwwkew") {
     let megaLongest = ""
@@ -37,3 +38,27 @@ var lengthOfLongestSubstring = function(s = "pwwkew") {
     return megaLongest.length
     
 };
+
+/* BETTER SOLUTION
+sliding window
+
+var lengthOfLongestSubstring = function(s) {
+    if(s.length <= 1) return s.length; 
+    
+    let leftPointer = 0; 
+    let container = []; 
+    
+    let max = 1;
+    
+    for(let i = 1; i < s.length; i++){
+        let container = s.substring(leftPointer, i);
+        if(container.includes(s[i])){
+            leftPointer = leftPointer + container.indexOf(s[i]) + 1;
+        }
+        container = s.substring(leftPointer, i+1);
+        max = max >= container.length ?  max : container.length;        
+    }
+    return max;     
+};
+
+*/
