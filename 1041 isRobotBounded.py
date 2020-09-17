@@ -3,16 +3,16 @@
 
 class Solution:
     
-    def getVector(self, head, coord, instruction):
+    def getVector(self, head, x, y, instruction):
         if instruction == 'G':
             if head == 'N':
-                coord[1] += 1
+                y += 1
             elif head == 'S':
-                coord[1] -= 1
+                y -= 1
             elif head == 'E':
-                coord[0] += 1
+                x += 1
             else:
-                coord[0] -= 1
+                x -= 1
         elif instruction == 'L':
             if head == 'N':
                 head = 'W'
@@ -31,13 +31,13 @@ class Solution:
                 head = 'W'
             else:
                 head = 'N'
-        return head, coord
+        return head, x, y
     
     def isRobotBounded(self, instructions: str) -> bool:
         head = 'N'
-        coord = [0, 0]
+        x, y = 0, 0
         for instruction in instructions:
-            head, coord = self.getVector(head, coord, instruction)
-        if coord == [0,0] or head != 'N':
+            head, x, y = self.getVector(head, x, y, instruction)
+        if (x == 0 and y == 0) or head != 'N':
             return True
         return False
