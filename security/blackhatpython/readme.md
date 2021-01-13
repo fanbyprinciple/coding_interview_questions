@@ -12,4 +12,4 @@ Using socket programming:
 using tcp_Server
 ![](tcp_server.png)
 
-On page 12.
+Netcat program made page 16. needs review and execution. "kicking the tires". Or skip socket for now and startwith paramiko.
